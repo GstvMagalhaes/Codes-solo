@@ -1,0 +1,36 @@
+class Pessoa{
+  String? nome;
+  int? idade;
+  double? peso;
+  String? sexo;
+  
+  mostraSaudacao(){
+    
+   return"Nome: $nome Idade: $idade Sexo: $sexo Peso: $peso";
+    
+  }
+  
+  String toString(){
+    return mostraSaudacao();
+  }
+  
+  Pessoa(String _nome){
+    nome = _nome;
+  }
+  
+}
+
+
+
+
+void main() {
+  Pessoa pessoa = Pessoa("Gustavo");
+//   pessoa.nome = "Gustavo";
+  pessoa.idade = 19;
+  pessoa.peso = 73.9;
+  pessoa.sexo = "Masculino";
+  pessoa.mostraSaudacao();
+  print(pessoa);
+  print(pessoa.toString());
+//   print("Nome: ${pessoa.nome} Idade: ${pessoa.idade} Sexo: ${pessoa.sexo} Peso: ${pessoa.peso}");
+}
