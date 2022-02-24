@@ -1,0 +1,28 @@
+// Crie uma classe chamada Senha e lhe dê uma propriedade chamada valor.
+// Sobrescreva o método toString para a classe Senha imprimir o valor.
+// Adicione um método chamado isValid que retorne True se o tamanho da senha for maior que 8.
+class Senha{
+
+  String valor = 'gustavo1234';
+
+  keyValue(String valor){
+  this.valor = valor.toString(); //duvida nessa linha
+  return valor; 
+  }
+  
+  bool isValid(){
+  if(valor.length > 8){
+  print('senha valida');
+  return true;
+    }else{
+  print('senha invalida');
+  return false;
+  }
+ }
+}
+void main(){
+  Senha senha = new Senha();
+
+  print(senha.valor);
+  print(senha.isValid()); 
+}
